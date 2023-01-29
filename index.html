@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="first">.</div>
+    <script>
+        /*
+        function Test1(x,y){
+            this.x = x;
+            this.y = y;
+
+
+        }
+
+        Test1.prototype.show = function(){
+            console.log(this.x + ' ' + this.y)
+        }
+        let text1 = new Test1(2,3);
+
+        let arr2 = [1,2,3];
+
+        Array.prototype.splice = function(){
+            console.log('лень');
+        }*/
+//1
+/*
+        function Calc1(x,y){
+            this.x = x;
+            this.y = y;
+        }
+        Calc1.prototype.sum = function(){
+            console.log(this.x+this.y);
+        }
+        Calc1.prototype.sub = function(){
+            console.log(this.x-this.y);
+        }
+        Calc1.prototype.mul = function(){
+            console.log(this.x*this.y)
+        }
+        Calc1.prototype.div = function(){
+            console.log(this.x/this.y);
+        }
+
+      let calc = new Calc1(5,3);
+      console.log(calc);
+      calc.sum();
+      calc.sub();
+      calc.mul();
+      calc.div();
+*/
+//2
+/*
+      function Person(x,y,z){
+            this.x = x;
+            this.y = y;
+            this.z = z;
+      }
+      Person.prototype.age = function(){
+        console.log('age: ' + this.x);
+      }
+
+      Person.prototype.gender = function(){
+        console.log('gender: ' + this.y);
+      }
+
+      Person.prototype.name = function(){
+        console.log('name: ' + this.z);
+      }
+      let person1 = new Person(42,'m','Сергей');
+      console.log(person1);
+      person1.age();
+      person1.gender();
+      person1.name();
+*/
+//3
+let el = document.querySelector('.first');
+     function Kropka(x,y){
+            this.x = x;
+            this.y = y;
+      }
+      Kropka.prototype.w = function(){
+        el.style.width = `${this.x}px` ;
+      }
+      Kropka.prototype.h = function(){
+        el.style.height`${this.y}px`;
+      }
+      Kropka.prototype.color = function(){
+        el.style.backgroundColor(rgb( Math.trunc(Math.random(255),Math.random(255),Math.random(255))));
+      }
+
+      let krop1 = new Kropka(34,56);
+      krop1.w();
+      krop1.h();
+      krop1.color();
+      
+
+    </script>
+</body>
+</html>
